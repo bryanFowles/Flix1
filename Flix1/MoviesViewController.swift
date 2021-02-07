@@ -10,16 +10,16 @@ import UIKit
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>; return movies.count
+         return movies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>; let cell = UITableViewCell()
+         let cell = UITableViewCell()
+        
         let movie = movies[indexPath.row]
         let title = movie["title"] as! String
         cell.textLabel!.text = title
         
-        cell.textLabel!.text = "row: \(indexPath.row)"
         return cell
     }
     
